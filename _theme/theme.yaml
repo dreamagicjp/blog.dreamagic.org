@@ -30,7 +30,7 @@ elements:
             label: Entry
             mappings:
               entry:
-                archive_type: Entry
+                archive_type: Individual
           monthly.html:
             label: Monthly
             mappings:
