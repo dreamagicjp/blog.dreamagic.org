@@ -9,7 +9,7 @@ elements:
       templates:
         index:
           archives.html:
-            label: archives
+            label: Archives
             outfile: archives.html
           atom.xml:
             label: Atom
@@ -22,20 +22,22 @@ elements:
             outfile: styles.css
         archive:
           category.html:
-            label: Category
+            label: Category Archive
             mappings:
               category:
                 archive_type: Category
-          entry.html:
-            label: Entry
-            mappings:
-              entry:
-                archive_type: Individual
           monthly.html:
-            label: Monthly
+            label: Monthly Archive
             mappings:
               monthly:
                 archive_type: Monthly
+        individual:
+          entry.html:
+            label: Entry Archive
+            mappings:
+              entry:
+                archive_type: Individual
+        page:
           page.html:
             label: Page
             mappings:
