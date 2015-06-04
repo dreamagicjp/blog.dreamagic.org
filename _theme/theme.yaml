@@ -9,7 +9,7 @@ elements:
       templates:
         index:
           archives.html:
-            label: Blog Archives
+            label: Archive List
             outfile: archives.html
           atom.xml:
             label: Atom
