@@ -21,22 +21,22 @@ elements:
             label: Styles
             outfile: styles.css
         archive:
-          category:
+          category.html:
             label: Category
             mappings:
               category:
                 archive_type: Category
-          entry:
+          entry.html:
             label: Entry
             mappings:
               entry:
                 archive_type: Entry
-          monthly:
+          monthly.html:
             label: Monthly
             mappings:
               monthly:
                 archive_type: Monthly
-          page:
+          page.html:
             label: Page
             mappings:
               page:
