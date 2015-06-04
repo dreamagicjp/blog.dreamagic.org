@@ -9,7 +9,7 @@ elements:
       templates:
         index:
           archives.html:
-            label: Archives
+            label: Blog Archives
             outfile: archives.html
           atom.xml:
             label: Atom
@@ -39,7 +39,7 @@ elements:
                 archive_type: Individual
         page:
           page.html:
-            label: Page
+            label: Page Archive
             mappings:
               page:
                 archive_type: Page
