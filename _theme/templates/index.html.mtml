@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <mt:Include module="Head">
+    <title>blog.dreamagic.org</title>
+</head>
+
+<body>
+    <mt:Include module="Navigation">
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1><a href="<mt:BlogURL>">blog</a></h1>
+                        <hr class="small">
+                        <span class="subheading">index</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <mt:Entries paginate_by="10">
+                    <div class="post-preview">
+                        <a href="<mt:EntryPermalink>">
+                            <h2 class="post-title"><mt:EntryTitle></h2>
+                        </a>
+                        <p class="post-meta"><mt:EntryDate format="%Y.%m.%d"></p>
+                    </div>
+                    <hr>
+                    <mt:EntriesFooter>
+                        <!-- Pager -->
+                        <ul class="pager">
+                            <mt:PaginationHasNext>
+                                <li class="previous"><a href="<$mt:PaginationNextURL$>">prev</a></li>
+                            </mt:PaginationHasNext>
+                            <li><a href="<mt:BlogURL>">index</a></li>
+                            <mt:PaginationHasPrevious>
+                                <li class="next"><a href="<$mt:PaginationPreviousURL$>">next</a></li>
+                            </mt:PaginationHasPrevious>
+                        </ul>
+                    </mt:EntriesFooter>
+                </mt:Entries>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <mt:Include module="Footer">
+
+    <mt:Include module="Scripts">
+
+</body>
+
+</html>

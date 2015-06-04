@@ -1,0 +1,52 @@
+id: blog_dreamagic_org
+label: blog.dreamagic.org
+name: blog.dreamagic.org
+version: 1.0
+elements:
+  template_set:
+    data:
+      base_path: templates
+      templates:
+        index:
+          archives.html:
+            label: archives
+            outfile: archives.html
+          atom.xml:
+            label: Atom
+            outfile: atom.xml
+          index.html:
+            label: Index
+            outfile: index.html
+          styles.css:
+            label: Styles
+            outfile: styles.css
+        archive:
+          category:
+            label: Category
+            mappings:
+              category:
+                archive_type: Category
+          entry:
+            label: Entry
+            mappings:
+              entry:
+                archive_type: Entry
+          monthly:
+            label: Monthly
+            mappings:
+              monthly:
+                archive_type: Monthly
+          page:
+            label: Page
+            mappings:
+              page:
+                archive_type: Page
+        module:
+          footer:
+            label: Footer
+          head:
+            label: Head
+          navigation:
+            label: Navigation
+          scripts:
+            label: Scripts

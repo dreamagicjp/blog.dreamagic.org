@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <mt:Include module="Head">
+    <title>blog.dreamagic.org</title>
+</head>
+
+<body>
+    <mt:Include module="Navigation">
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1><a href="<mt:BlogURL>">blog</a></h1>
+                        <hr class="small">
+                        <span class="subheading">archives</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <h2 class="post-title">Tags</h2>
+                    <div class="post-meta">
+                        <mt:ArchiveList archive_type="Category">
+                            <mt:ArchiveListHeader><ul></mt:ArchiveListHeader>
+                            <li><a href="<$mt:ArchiveLink$>"><$mt:ArchiveTitle$></a></li>
+                            <mt:ArchiveListFooter></ul></mt:ArchiveListFooter>
+                        </mt:ArchiveList>
+                    </div>
+                    <hr>
+                    <h2 class="post-title">Monthly Archive</h2>
+                    <div class="post-meta">
+                        <mt:ArchiveList archive_type="Monthly">
+                            <mt:ArchiveListHeader><ul></mt:ArchiveListHeader>
+                            <li><a href="<$mt:ArchiveLink$>"><$mt:ArchiveTitle$></a></li>
+                            <mt:ArchiveListFooter></ul></mt:ArchiveListFooter>
+                        </mt:ArchiveList>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <mt:Include module="Footer">
+
+    <mt:Include module="Scripts">
+
+</body>
+
+</html>

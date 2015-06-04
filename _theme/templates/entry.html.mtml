@@ -1,0 +1,48 @@
+<mt:SetVarBlock name="entry_image"><mt:EntryAssets lastn="1"><mt:AssetURL></mt:EntryAssets></mt:SetVarBlock>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <mt:Include module="Head">
+    <title><mt:EntryTitle> - <mt:BlogName></title>
+</head>
+<body>
+    <mt:Include module="Navigation">
+
+    <!-- Page Header -->
+    <header class="intro-header" style="background-image: url('<mt:If name="entry_image"><mt:Var name="entry_image"><mt:Else>/img/home-bg.jpg</mt:If>')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="page-heading">
+                        <h1><a href="<mt:BlogURL>">blog</a></h1>
+                        <hr class="small">
+                        <span class="subheading"><mt:EntryTitle></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <mt:EntryBody>
+                <mt:EntryMore>
+                <div class="tags">tags: <mt:EntryCategories glue=", "><a href="<mt:CategoryArchiveLink>"><mt:CategoryLabel></a></mt:EntryCategories></div>
+                <p>published by <a href="/about.html"><mt:EntryAuthorDisplayName></a> on <mt:EntryDate format="%B %e, %Y"></p>
+                <!-- Pager -->
+                <ul class="pager">
+                    <li><a href="<mt:BlogURL>">index</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <mt:Include module="Footer">
+    <mt:Include module="Scripts">
+</body>
+
+</html>
