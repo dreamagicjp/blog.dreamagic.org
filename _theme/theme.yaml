@@ -8,37 +8,37 @@ elements:
       base_path: templates
       templates:
         index:
-          archives_html:
+          archives:
             label: Archive List
             outfile: archives.html
-          atom_xml:
+          atom:
             label: Atom
             outfile: atom.xml
-          index_html:
+          index:
             label: Index
             outfile: index.html
-          styles_css:
+          styles:
             label: Styles
             outfile: styles.css
         archive:
-          category_html:
+          category:
             label: Category Archive
             mappings:
               category:
                 archive_type: Category
-          monthly_html:
+          monthly:
             label: Monthly Archive
             mappings:
               monthly:
                 archive_type: Monthly
         individual:
-          entry_html:
+          entry:
             label: Entry Archive
             mappings:
               entry:
                 archive_type: Individual
         page:
-          page_html:
+          page:
             label: Page Archive
             mappings:
               page:
