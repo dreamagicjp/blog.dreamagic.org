@@ -4,7 +4,9 @@
 <meta name="description" content="Blog by Keiichi Inoue">
 <meta name="author" content="Keiichi Inoue">
 <meta name="p:domain_verify" content="814c3d4f770ed4be8ed87822ecc4e19d"/>
-<meta property="og:image" content="<mt:EntryAssets type="image" sort_order="ascend" limit="1"><$mt:AssetThumbnailURL width="1200"$><mt:Else><$mt:BlogURL encode_html="1"$>images/ogimage.png</mt:EntryAssets>">
+<mt:If name="individual_archive">
+  <meta property="og:image" content="<mt:EntryAssets type="image" sort_order="ascend" limit="1"><$mt:AssetThumbnailURL width="1200"$><mt:Else><$mt:BlogURL encode_html="1"$>images/ogimage.png</mt:EntryAssets>">
+</mt:If>
 
 <!-- Bootstrap Core CSS -->
 <link href="/css/bootstrap.min.css" rel="stylesheet">
