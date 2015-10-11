@@ -6,7 +6,7 @@
 <meta name="p:domain_verify" content="814c3d4f770ed4be8ed87822ecc4e19d"/>
 <mt:If name="individual_archive">
   <mt:if tag="CustomFieldValue" identifier="entry_image">
-    <meta property="og:image" content="<mt:CustomFieldAsset identifier="entryImage"><$mt:AssetThumbnailURL width="1200"$></mt:CustomFieldAsset>">
+    <meta property="og:image" content="<mt:CustomFieldAsset identifier="entry_image"><$mt:AssetThumbnailURL width="1200"$></mt:CustomFieldAsset>">
   <mt:Else>
     <meta property="og:image" content="<mt:EntryAssets type="image" sort_order="ascend" limit="1"><$mt:AssetThumbnailURL width="1200"$><mt:Else><$mt:BlogURL encode_html="1"$>images/ogimage.png</mt:EntryAssets>">
   </mt:If>
