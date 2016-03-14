@@ -52,3 +52,5 @@ elements:
             label: Navigation
           scripts:
             label: Scripts
+          zenback:
+            label: Zenback
