@@ -1,4 +1,5 @@
 <mt:SetVar name="individual_archive" value="1">
+<mt:SetVarBlock name="cf_image"><mt:CustomFieldAsset identifier="entry_image"><$mt:AssetURL$></mt:CustomFieldAsset></mt:SetVarBlock>
 <mt:SetVarBlock name="entry_image"><mt:EntryAssets lastn="1"><mt:AssetURL></mt:EntryAssets></mt:SetVarBlock>
 <!DOCTYPE html>
 <html lang="ja">
@@ -10,7 +11,7 @@
     <mt:Include module="Navigation">
 
     <!-- Page Header -->
-    <header class="intro-header" style="background-image: url('<mt:If name="entry_image"><mt:Var name="entry_image"><mt:Else>/img/home-bg.jpg</mt:If>')">
+    <header class="intro-header" style="background-image: url('<mt:If name="cf_image"><mt:Var name="cf_image"><mt:Else><mt:If name="entry_image"><mt:Var name="entry_image"><mt:Else>/img/home-bg.jpg</mt:If>')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
